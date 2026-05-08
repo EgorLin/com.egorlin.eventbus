@@ -1,0 +1,5 @@
+{
+  "name": "com.egorlin.eventbus.Editor",
+  "rootNamespace": "EgorLin.EventBus",
+  "includePlatforms": ["Editor"]
+}
