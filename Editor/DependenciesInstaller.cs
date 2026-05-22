@@ -9,7 +9,7 @@ namespace EgorLin.EventBus.Editor
     {
         private static readonly Dictionary<string, string> Packages = new()
         {
-            { "com.egorlin.pools", "https://github.com/egorlin/com.egorlin.pools.git#1.0.0" },
+            { "com.egorlin.pools", "https://github.com/egorlin/com.egorlin.pools.git#1.0.2" },
             { "com.egorlin.collections", "https://github.com/egorlin/com.egorlin.collections.git#1.0.0" },
         };
 
