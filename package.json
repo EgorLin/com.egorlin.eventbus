@@ -5,5 +5,8 @@
   "description": "Event Bus",
   "unity": "6000.3",
   "author": { "name": "EgorLin" },
-  "dependencies": {}
+  "dependencies": {
+    "com.egorlin.collections" : "https://github.com/egorlin/com.egorlin.collections.git#1.0.1",
+    "com.egorlin.pools" : "https://github.com/egorlin/com.egorlin.pools.git#1.0.4"
+  }
 }
