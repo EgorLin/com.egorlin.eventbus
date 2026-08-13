@@ -5,7 +5,7 @@ namespace EgorLin.EventBus.Containers
 {
 	internal sealed class EventContainer<T> : IEventContainer
 	{
-		private Action<T>[] _listeners = new Action<T>[4];
+		private Action<T>[] _listeners = new Action<T>[1];
 		private int _countListeners;
 
 		private Action<T>[] _listenersInvoking = Array.Empty<Action<T>>();
@@ -135,7 +135,7 @@ namespace EgorLin.EventBus.Containers
 	
 	internal sealed class EventContainer : IEventContainer
 	{
-		private Action[] _listeners = new Action[4];
+		private Action[] _listeners = new Action[1];
 		private int _countListeners;
 
 		private Action[] _listenersInvoking = Array.Empty<Action>();

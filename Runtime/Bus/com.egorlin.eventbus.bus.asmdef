@@ -1,0 +1,18 @@
+{
+    "name": "com.egorlin.eventbus.bus",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8b2e4327d97bafadf82241b2c3ab2482",
+        "GUID:a15fe915de824bdd94b1a3055d6d3b2d",
+        "GUID:c6ae0b8471854376bc15b3e70cf97edb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

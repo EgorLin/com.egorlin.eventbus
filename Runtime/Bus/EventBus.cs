@@ -1,5 +1,5 @@
 using System;
-using EgorLin.Collections.Unsafe;
+using System.Collections.Generic;
 using EgorLin.EventBus.Containers;
 using EgorLin.EventBus.Keys;
 using EgorLin.EventBus.Subscriptions;
@@ -8,7 +8,7 @@ namespace EgorLin.EventBus.Bus
 {
 	public class EventBus : IEventBusListener, IEventBusPublisher
 	{
-        private readonly IntHashMap<IEventContainer> _map = new();
+        private readonly Dictionary<int, IEventContainer> _map = new();
 
         public IEventSubscription Subscribe<T>(KeyEvent<T> key, Action<T> callback)
         {
@@ -48,7 +48,7 @@ namespace EgorLin.EventBus.Bus
             }
 
             var container = new EventContainer<T>();
-            _map.Set(key.Id, container);
+            _map[key.Id] = container;
             
             return container;
         }
@@ -61,7 +61,7 @@ namespace EgorLin.EventBus.Bus
             }
 
             var container = new EventContainer();
-            _map.Set(key.Id, container);
+            _map[key.Id] = container;
             
             return container;
         }

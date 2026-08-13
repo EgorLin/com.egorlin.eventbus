@@ -1,6 +1,6 @@
 using System;
 using EgorLin.EventBus.Containers;
-using EgorLin.Pools;
+using EgorLin.EventBus.Pools;
 
 namespace EgorLin.EventBus.Subscriptions
 {

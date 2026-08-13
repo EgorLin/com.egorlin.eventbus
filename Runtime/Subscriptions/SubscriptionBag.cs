@@ -1,20 +1,19 @@
-
-using EgorLin.Pools;
+using EgorLin.EventBus.Pools;
 
 namespace EgorLin.EventBus.Subscriptions
 {
-	public struct SubscriptionScope
+	public struct SubscriptionBag
 	{
         private readonly PooledFastList<IEventSubscription> _subscriptions;
 
-        public static SubscriptionScope Create()
+        public static SubscriptionBag Create()
         {
             var subscriptions = PoolFastList<IEventSubscription>.Spawn();
             
-            return new SubscriptionScope(subscriptions);
+            return new SubscriptionBag(subscriptions);
         }
 
-        private SubscriptionScope(PooledFastList<IEventSubscription> subscriptions)
+        private SubscriptionBag(PooledFastList<IEventSubscription> subscriptions)
         {
             _subscriptions = subscriptions;
         }

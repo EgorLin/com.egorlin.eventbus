@@ -1,10 +1,12 @@
 {
-    "name": "com.egorlin.eventbus",
-    "rootNamespace": "EgorLin.EventBus",
-    "references": ["GUID:0ff4398da601a5d3b8ce461dba2ed628"],
+    "name": "com.egorlin.eventbus.listener",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8b2e4327d97bafadf82241b2c3ab2482"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
